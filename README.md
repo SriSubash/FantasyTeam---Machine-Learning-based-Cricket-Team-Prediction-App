@@ -63,11 +63,11 @@ The primary purpose of the FantasyCricket: ML-Powered Team Prediction Android Ap
 The scope of the FantasyCricket: ML-Powered Team Prediction Android App outlines the boundaries and key features of the project. This will include the functionalities to be developed, the user demographic, and the data handling aspects.
 
 ### 1. Functional Scope
-•	User Registration and Authentication: Users will be able to create accounts, log in, and manage their profiles within the app.
-•	Match Input: Users can input details about upcoming matches, including teams, date, and other relevant parameters.
-•	Player Data Analysis: The app will analyze player statistics, including past performances, form, injuries, and other relevant metrics.
-•	ML-Powered Predictions: Implement machine learning algorithms to predict player performance and recommend optimal team compositions based on the analysis.
-•	User Interface: Develop a user-friendly interface that displays recommendations, insights, and allows for easy navigation.
+*	User Registration and Authentication: Users will be able to create accounts, log in, and manage their profiles within the app.
+*	Match Input: Users can input details about upcoming matches, including teams, date, and other relevant parameters.
+*	Player Data Analysis: The app will analyze player statistics, including past performances, form, injuries, and other relevant metrics.
+*	ML-Powered Predictions: Implement machine learning algorithms to predict player performance and recommend optimal team compositions based on the analysis.
+*	User Interface: Develop a user-friendly interface that displays recommendations, insights, and allows for easy navigation.
 
 ### 2. Technical Scope
 •	Machine Learning Models: Use appropriate ML algorithms and frameworks (e.g., TensorFlow, Scikit-learn) to develop the prediction model.
