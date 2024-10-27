@@ -70,20 +70,20 @@ The scope of the FantasyCricket: ML-Powered Team Prediction Android App outlines
 *	User Interface: Develop a user-friendly interface that displays recommendations, insights, and allows for easy navigation.
 
 ### 2. Technical Scope
-•	Machine Learning Models: Use appropriate ML algorithms and frameworks (e.g., TensorFlow, Scikit-learn) to develop the prediction model.
-•	Data Collection: Aggregate and preprocess historical and real-time data from various sources, including sports statistics websites and APIs.
-•	Mobile Application Development: Utilize Android development tools (e.g., Android Studio, Java/Kotlin) to build and deploy the application.
+*	Machine Learning Models: Use appropriate ML algorithms and frameworks (e.g., TensorFlow, Scikit-learn) to develop the prediction model.
+*	Data Collection: Aggregate and preprocess historical and real-time data from various sources, including sports statistics websites and APIs.
+*	Mobile Application Development: Utilize Android development tools (e.g., Android Studio, Java/Kotlin) to build and deploy the application.
 
 ### 3. User Demographics
-•	Target Audience: The primary users will be fantasy cricket enthusiasts ranging from beginners to advanced players who are looking for data-driven insights to enhance their gameplay.
+*	Target Audience: The primary users will be fantasy cricket enthusiasts ranging from beginners to advanced players who are looking for data-driven insights to enhance their gameplay.
 
 
 ## OVERVIEW:
 The FantasyCricket: ML-Powered Team Prediction Android App is an innovative mobile application designed to enhance the fantasy cricket experience by leveraging the power of machine learning. As fantasy cricket gains popularity among sports enthusiasts, the need for data-driven decision-making tools has become essential for players looking to maximize their chances of success in fantasy leagues.
 ### Key Features:
-•	User-Centric Design: The app features an intuitive interface that simplifies the process of team selection and management. Users can easily navigate through various functionalities, making it accessible to both novice and experienced fantasy cricket players.
-•	Advanced Analytics: By utilizing machine learning algorithms, the app analyzes historical data, player performance statistics, and match conditions to provide accurate predictions and recommendations for optimal team selection.
-•	Performance Insights: Users receive detailed insights and analytics on players, helping them understand the metrics driving their predicted success and enabling informed decision-making.
+*	User-Centric Design: The app features an intuitive interface that simplifies the process of team selection and management. Users can easily navigate through various functionalities, making it accessible to both novice and experienced fantasy cricket players.
+*	Advanced Analytics: By utilizing machine learning algorithms, the app analyzes historical data, player performance statistics, and match conditions to provide accurate predictions and recommendations for optimal team selection.
+*	Performance Insights: Users receive detailed insights and analytics on players, helping them understand the metrics driving their predicted success and enabling informed decision-making.
 
 ### Technology Stack:
 The FantasyCricket app will be developed using Android technologies, with machine learning models implemented through frameworks such as TensorFlow or Scikit-learn. Data will be collected from various sources, processed, and analyzed to inform the predictions provided to users.
@@ -97,46 +97,46 @@ The FantasyCricket app will be developed using Android technologies, with machin
 ## CONCEPTS USED:
 
 ### SQLite Database:
-•	SQLite is a lightweight, serverless, self-contained SQL database engine that is perfect for mobile applications. It allows the app to maintain a local database, which is ideal for storing user credentials and other relevant data without the need for a dedicated server.
-•	The database is embedded within the application, ensuring quick access and reducing latency during user interactions.
-•	SQLite's structured query language (SQL) capabilities allow for efficient querying and manipulation of user data, enabling functionalities such as updating user profiles, resetting passwords, and retrieving user information seamlessly.
+*	SQLite is a lightweight, serverless, self-contained SQL database engine that is perfect for mobile applications. It allows the app to maintain a local database, which is ideal for storing user credentials and other relevant data without the need for a dedicated server.
+*	The database is embedded within the application, ensuring quick access and reducing latency during user interactions.
+*	SQLite's structured query language (SQL) capabilities allow for efficient querying and manipulation of user data, enabling functionalities such as updating user profiles, resetting passwords, and retrieving user information seamlessly.
 
 ### User Registration and Authentication:
-o	The app facilitates user registration by capturing essential details, such as username and password, which are securely stored in the SQLite database.
-o	During the login process, the app verifies user credentials against the stored data, ensuring that only authorized users can access the application.
+*	The app facilitates user registration by capturing essential details, such as username and password, which are securely stored in the SQLite database.
+*	During the login process, the app verifies user credentials against the stored data, ensuring that only authorized users can access the application.
 
 ### Explicit Intent:
-•	Explicit intents are primarily used to start a specific activity within the application. For instance, when a user clicks on a button to access the team selection page or view player statistics, an explicit intent is triggered to launch the corresponding activity.
-•	This mechanism ensures that the app can direct users to the intended screen, providing a clear and coherent navigation flow.
+*	Explicit intents are primarily used to start a specific activity within the application. For instance, when a user clicks on a button to access the team selection page or view player statistics, an explicit intent is triggered to launch the corresponding activity.
+*	This mechanism ensures that the app can direct users to the intended screen, providing a clear and coherent navigation flow.
 
 ### Activity Navigation:
-o	Explicit intents allow for the passing of data between activities. For example, when a user selects a player from a list, the app can use an explicit intent to send the selected player’s details to the next activity, where the user can view more information or make selections.
-o	This data passing can include primitive data types, objects, or bundled data, facilitating a dynamic user experience.
-o	By utilizing explicit intents, the app can create interactive features such as sharing player insights or predictions. For example, users may share their selected fantasy team with friends through an explicit intent that opens a sharing interface.
-o	This enhances user engagement and encourages social interaction within the fantasy cricket community.
+*	Explicit intents allow for the passing of data between activities. For example, when a user selects a player from a list, the app can use an explicit intent to send the selected player’s details to the next activity, where the user can view more information or make selections.
+*	This data passing can include primitive data types, objects, or bundled data, facilitating a dynamic user experience.
+*	By utilizing explicit intents, the app can create interactive features such as sharing player insights or predictions. For example, users may share their selected fantasy team with friends through an explicit intent that opens a sharing interface.
+*	This enhances user engagement and encourages social interaction within the fantasy cricket community.
 
 ### Flask API:
-•	Flask is a lightweight and flexible web framework for Python that is well-suited for developing RESTful APIs. Its simplicity and scalability make it an ideal choice for integrating with machine learning models and handling HTTP requests efficiently.
-•	The Flask API server acts as an intermediary between the mobile application and the ML backend, allowing for clear and organized communication.
+*	Flask is a lightweight and flexible web framework for Python that is well-suited for developing RESTful APIs. Its simplicity and scalability make it an ideal choice for integrating with machine learning models and handling HTTP requests efficiently.
+*	The Flask API server acts as an intermediary between the mobile application and the ML backend, allowing for clear and organized communication.
 
 ### Data Processing and Predictions:
-o	When a user submits data (e.g., player statistics, match details), the Android app sends an HTTP request to the Flask API server. The server processes the request, passes the data to the trained ML model, and retrieves predictions.
-o	The server handles all necessary data preprocessing, such as normalization or transformation, to ensure that the input is suitable for the ML model.
+*	When a user submits data (e.g., player statistics, match details), the Android app sends an HTTP request to the Flask API server. The server processes the request, passes the data to the trained ML model, and retrieves predictions.
+*	The server handles all necessary data preprocessing, such as normalization or transformation, to ensure that the input is suitable for the ML model.
 	
 ### Response Handling:
-o	Once the ML model generates predictions, the Flask API server sends the results back to the Android app in a structured format (e.g., JSON). This allows the app to easily parse and display the predicted outcomes to the user.
-o	By maintaining a clear response structure, the app can provide users with timely and relevant information about team recommendations.
+*	Once the ML model generates predictions, the Flask API server sends the results back to the Android app in a structured format (e.g., JSON). This allows the app to easily parse and display the predicted outcomes to the user.
+*	By maintaining a clear response structure, the app can provide users with timely and relevant information about team recommendations.
 
 
 ### Deep Neural Network (DNN):
 A deep neural network (DNN) is a type of machine learning algorithm that uses multiple layers of artificial neurons to solve complex problems. DNNs are more complex than conventional neural networks because of their multiple hidden layers. 
 Here are some characteristics of DNNs: 
-•	Architecture: DNNs have millions of artificial neurons linked together with weights that represent the connections between nodes. 
-•	Training: DNNs require millions of examples of training data, which is more than other machine learning methods. 
-•	Applications: DNNs are used in many applications, including healthcare, signal processing, computer vision, natural language processing, and image analysis. 
-•	Complexity: DNNs are more complex and resource-intensive than conventional neural networks. 
-•	Performance: DNNs work best with GPU-based architectures for faster training times. 
-•	Accuracy: DNNs can help increase the accuracy of a machine learning model.
+*	Architecture: DNNs have millions of artificial neurons linked together with weights that represent the connections between nodes. 
+*	Training: DNNs require millions of examples of training data, which is more than other machine learning methods. 
+*	Applications: DNNs are used in many applications, including healthcare, signal processing, computer vision, natural language processing, and image analysis. 
+*	Complexity: DNNs are more complex and resource-intensive than conventional neural networks. 
+*	Performance: DNNs work best with GPU-based architectures for faster training times. 
+*	Accuracy: DNNs can help increase the accuracy of a machine learning model.
  
 ### Packages to be imported:
 import keras
