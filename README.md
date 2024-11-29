@@ -137,8 +137,3 @@ Here are some characteristics of DNNs:
 *	Complexity: DNNs are more complex and resource-intensive than conventional neural networks. 
 *	Performance: DNNs work best with GPU-based architectures for faster training times. 
 *	Accuracy: DNNs can help increase the accuracy of a machine learning model.
- 
-### Packages to be imported:
-import keras
-from keras import layers
-from keras import ops
